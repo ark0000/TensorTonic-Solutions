@@ -6,7 +6,7 @@ def pad_and_truncate(sequences, max_length, pad_value=0):
             
             for _ in range(0,times):
                 
-                i.extend([pad_value])
+                i.append(pad_value)
             t.append(i)
         else:
           t.append(i[:max_length])
